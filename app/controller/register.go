@@ -4,11 +4,11 @@ import (
 	"log"
 	"net/http"
 
-	"app/model"
-	"app/shared/passhash"
-	"app/shared/recaptcha"
-	"app/shared/session"
-	"app/shared/view"
+	"gowebapp/app/model"
+	"gowebapp/app/shared/passhash"
+	"gowebapp/app/shared/recaptcha"
+	"gowebapp/app/shared/session"
+	"gowebapp/app/shared/view"
 
 	"github.com/josephspurrier/csrfbanana"
 )

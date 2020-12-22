@@ -1,7 +1,7 @@
 {
 	"Database": {
-		"Type": "Bolt",
-		"Bolt": {		
+		"Type": "MySQL",
+		"Bolt": {
  			"Path": "gowebapp.db"
   		},
 		"MongoDB": {
@@ -10,9 +10,9 @@
 		},
 		"MySQL": {
 			"Username": "root",
-			"Password": "",
+			"Password": "mypass123",
 			"Name": "gowebapp",
-			"Hostname": "127.0.0.1",
+			"Hostname": "172.x.x.x.",
 			"Port": 3306,
 			"Parameter": "?parseTime=true"
 		}

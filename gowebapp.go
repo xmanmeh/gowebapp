@@ -6,15 +6,15 @@ import (
 	"os"
 	"runtime"
 
-	"app/route"
-	"app/shared/database"
-	"app/shared/email"
-	"app/shared/jsonconfig"
-	"app/shared/recaptcha"
-	"app/shared/server"
-	"app/shared/session"
-	"app/shared/view"
-	"app/shared/view/plugin"
+	"gowebapp/app/route"
+	"gowebapp/app/shared/database"
+	"gowebapp/app/shared/email"
+	"gowebapp/app/shared/jsonconfig"
+	"gowebapp/app/shared/recaptcha"
+	"gowebapp/app/shared/server"
+	"gowebapp/app/shared/session"
+	"gowebapp/app/shared/view"
+	"gowebapp/app/shared/view/plugin"
 )
 
 // *****************************************************************************
@@ -52,6 +52,7 @@ func main() {
 		recaptcha.Plugin())
 
 	// Start the listener
+	config.Server.HTTPPort = 9000
 	server.Run(route.LoadHTTP(), route.LoadHTTPS(), config.Server)
 }
 

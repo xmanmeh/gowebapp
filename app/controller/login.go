@@ -5,10 +5,10 @@ import (
 	"log"
 	"net/http"
 
-	"app/model"
-	"app/shared/passhash"
-	"app/shared/session"
-	"app/shared/view"
+	"gowebapp/app/model"
+	"gowebapp/app/shared/passhash"
+	"gowebapp/app/shared/session"
+	"gowebapp/app/shared/view"
 
 	"github.com/gorilla/sessions"
 	"github.com/josephspurrier/csrfbanana"

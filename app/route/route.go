@@ -3,12 +3,12 @@ package route
 import (
 	"net/http"
 
-	"app/controller"
-	"app/route/middleware/acl"
-	hr "app/route/middleware/httprouterwrapper"
-	"app/route/middleware/logrequest"
-	"app/route/middleware/pprofhandler"
-	"app/shared/session"
+	"gowebapp/app/controller"
+	"gowebapp/app/route/middleware/acl"
+	hr "gowebapp/app/route/middleware/httprouterwrapper"
+	"gowebapp/app/route/middleware/logrequest"
+	"gowebapp/app/route/middleware/pprofhandler"
+	"gowebapp/app/shared/session"
 
 	"github.com/gorilla/context"
 	"github.com/josephspurrier/csrfbanana"
